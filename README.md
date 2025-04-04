@@ -1,69 +1,89 @@
+<h1 align="center">🌄 View-Robust Backbone and Discriminative Reconstruction for Few-Shot Fine-Grained Image Classification</h1>
 
-# View-Robust Backbone and Discriminative Reconstruction for Few-Shot Fine-Grained Image Classification
+<p align="center">
+  <a href="https://example.com/path/to/your/paper">
+    <img alt="Paper" src="https://img.shields.io/badge/Paper-IJCNN%202025-blue" />
+  </a>
+  <a href="https://github.com/jiangjiawen321/VRAS">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/jiangjiawen321/VRAS?style=social" />
+  </a>
+</p>
 
-[![Paper](https://img.shields.io/badge/Paper-IJCNN%202025-blue)](https://example.com/path/to/your/paper)
-[![GitHub Stars](https://img.shields.io/github/stars/jiangjiawen321/VRAS?style=social)](https://github.com/jiangjiawen321/VRAS)
+<p align="center"><strong>⭐ If you find our code useful, please consider starring this repository!</strong></p>
 
-**If you find our code useful, please star our repository!** ⭐
+---
 
 ## 📄 Abstract
 
-> We study few-shot fine-grained image classification, a task that faces two key challenges: (1) the scarcity of labeled samples amplifies the model’s sensitivity to viewpoint variations, resulting in feature inconsistency, and (2) reconstruction-based methods, while improving inter-class separability, inadvertently introduce intra-class variations, further complicating discrimination. To address these challenges, we propose the View-Robust Attention Selector (VRAS), a feature enhancement backbone designed to mitigate viewpoint-induced misclassifications. By integrating cross-scale feature interaction and adaptive selection mechanisms, VRAS effectively reduces spatial sensitivity arising from the limited viewpoint diversity in few-shot support sets. This approach not only preserves intra-class consistency but also enhances inter-class discriminability, ensuring robust feature representations. Furthermore, we introduce the Enhancement and Reconstruction (ER) module, designed to strengthen discriminative learning. ER achieves this by maximizing inter-class divergence while enhancing intra-class compactness through a regularized Ridge Regression optimization strategy. By dynamically suppressing low-saliency dimensions, ER maintains geometric coherence and effectively filters out semantic noise. Extensive experiments on three fine-grained datasets show that our method significantly outperforms state-of-the-art few-shot classification methods.
+> We study few-shot fine-grained image classification, a task that faces two key challenges: (1) the scarcity of labeled samples amplifies the model’s sensitivity to viewpoint variations, resulting in feature inconsistency, and (2) reconstruction-based methods, while improving inter-class separability, inadvertently introduce intra-class variations, further complicating discrimination.
+To address these challenges, we propose the View-Robust Attention Selector (VRAS), a feature enhancement backbone designed to mitigate viewpoint-induced misclassifications. By integrating cross-scale feature interaction and adaptive selection mechanisms, VRAS effectively reduces spatial sensitivity arising from the limited viewpoint diversity in few-shot support sets. This approach not only preserves intra-class consistency but also enhances inter-class discriminability, ensuring robust feature representations.
+Furthermore, we introduce the Enhancement and Reconstruction (ER) module, designed to strengthen discriminative learning. ER achieves this by maximizing inter-class divergence while enhancing intra-class compactness through a regularized Ridge Regression optimization strategy. By dynamically suppressing low-saliency dimensions, ER maintains geometric coherence and effectively filters out semantic noise.
+> Extensive experiments on three fine-grained datasets show that our method significantly outperforms state-of-the-art few-shot classification methods.
 
 <p align="center">
   <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/1.jpeg" alt="Model Architecture" width="100%">
   <br/><em>Figure 1: Model Architecture.</em>
 </p>
 
+---
+
 ## 🧱 View-Robust Backbones
 
-This repository provides implementations for two VRAS backbone variants:
+🔧 This repository provides implementations for two VRAS backbone variants:
 
-* [`VRAS-Conv-4`](https://github.com/jiangjiawen321/VRAS/blob/main/models/backbones/VRAS-Conv4.py)
-* [`VRAS-ResNet-12`](https://github.com/jiangjiawen321/VRAS/blob/main/models/backbones/VRAS-ResNet12.py)
+- 🧩 [VRAS-Conv-4](https://github.com/jiangjiawen321/VRAS/blob/main/models/backbones/VRAS-Conv4.py) – lightweight, simple convolutional baseline.
+- 🧱 [VRAS-ResNet-12](https://github.com/jiangjiawen321/VRAS/blob/main/models/backbones/VRAS-ResNet12.py) – deeper architecture with stronger representation capacity.
+
+---
 
 ## ⚙️ Setup Environment
 
-Create and activate the Conda environment using the provided file:
+📦 To get started, create and activate the Conda environment using the provided YAML file:
 
 ```bash
 conda env create -f environment.yml
 conda activate VRAS
 ```
 
+✅ Environment ready!
+
+---
+
 ## 🚀 Training and Evaluation
 
-Run the training and evaluation scripts for the different datasets and backbones:
+🎯 Run the training and evaluation scripts on different datasets:
 
-**CUB Dataset:**
+### 🕊 CUB Dataset
 
 ```bash
-# Using VRAS-Conv-4
+# VRAS-Conv-4
 python experiments/CUB/VRAS-Conv-4/train.py
 
-# Using VRAS-ResNet-12
+# VRAS-ResNet-12
 python experiments/CUB/VRAS-ResNet-12/train.py
 ```
 
-**Cars Dataset:**
+### 🚗 Cars Dataset
 
 ```bash
-# Using VRAS-Conv-4
+# VRAS-Conv-4
 python experiments/cars/VRAS-Conv-4/train.py
 
-# Using VRAS-ResNet-12
+# VRAS-ResNet-12
 python experiments/cars/VRAS-ResNet-12/train.py
 ```
 
-**Dogs Dataset:**
+### 🐶 Dogs Dataset
 
 ```bash
-# Using VRAS-Conv-4
+# VRAS-Conv-4
 python experiments/dogs/VRAS-Conv-4/train.py
 
-# Using VRAS-ResNet-12
+# VRAS-ResNet-12
 python experiments/dogs/VRAS-ResNet-12/train.py
 ```
+
+---
 
 ## 📊 Experimental Results
 
@@ -71,19 +91,30 @@ python experiments/dogs/VRAS-ResNet-12/train.py
   <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table1.jpeg?raw=true" alt="Experimental Results Table 1" width="100%">
   <br/><em>Table 1: Comparison with state-of-the-art methods.</em>
 </p>
+
 <p align="center">
   <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table2.jpeg?raw=true" alt="Experimental Results Table 2" width="100%">
   <br/><em>Table 2: Ablation Study.</em>
 </p>
+
 <p align="center">
   <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table3.jpeg?raw=true" alt="Viewpoint-Robust Ablation Study" width="70%">
   <br/><em>Table 3: Viewpoint-Robust Ablation Study.</em>
 </p>
 
+---
+
 ## 🙏 Acknowledgement
 
-Thanks to the open-source contribution of [**FRN**](https://github.com/Tsingularity/FRN).
+Special thanks to the open-source community, especially [**FRN**](https://github.com/Tsingularity/FRN), whose work inspired part of this project. 💡
 
-## Star History
+---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jiangjiawen321/VRAS&type=Date)](https://www.star-history.com/#jiangjiawen321/VRAS&Date)
+## 📈 Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/#jiangjiawen321/VRAS&Date">
+    <img src="https://api.star-history.com/svg?repos=jiangjiawen321/VRAS&type=Date" alt="Star History Chart"/>
+  </a>
+</p>
+
