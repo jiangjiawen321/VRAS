@@ -1,4 +1,4 @@
-name: FRN
+name: VRAS
 channels:
   - pytorch
   - anaconda
