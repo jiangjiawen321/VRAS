@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from .backbones import Conv_4,ResNet
+from .backbones import VRAS-Conv_4,VRAS-ResNet
 
 
 class invertedBlock(nn.Module):
@@ -104,11 +104,11 @@ class FRN(nn.Module):
 
         if resnet:
             num_channel = 640
-            self.feature_extractor = ResNet.resnet12()
+            self.feature_extractor = VRAS-ResNet.resnet12()
 
         else:
             num_channel = 64
-            self.feature_extractor = Conv_4.BackBone_final(num_channel)
+            self.feature_extractor = VRAS-Conv_4.BackBone_final(num_channel)
 
         self.shots = shots
         self.way = way
