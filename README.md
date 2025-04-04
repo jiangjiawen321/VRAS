@@ -11,7 +11,7 @@
 > We study few-shot fine-grained image classification, a task that faces two key challenges: (1) the scarcity of labeled samples amplifies the model’s sensitivity to viewpoint variations, resulting in feature inconsistency, and (2) reconstruction-based methods, while improving inter-class separability, inadvertently introduce intra-class variations, further complicating discrimination. To address these challenges, we propose the View-Robust Attention Selector (VRAS), a feature enhancement backbone designed to mitigate viewpoint-induced misclassifications. By integrating cross-scale feature interaction and adaptive selection mechanisms, VRAS effectively reduces spatial sensitivity arising from the limited viewpoint diversity in few-shot support sets. This approach not only preserves intra-class consistency but also enhances inter-class discriminability, ensuring robust feature representations. Furthermore, we introduce the Enhancement and Reconstruction (ER) module, designed to strengthen discriminative learning. ER achieves this by maximizing inter-class divergence while enhancing intra-class compactness through a regularized Ridge Regression optimization strategy. By dynamically suppressing low-saliency dimensions, ER maintains geometric coherence and effectively filters out semantic noise. Extensive experiments on three fine-grained datasets show that our method significantly outperforms state-of-the-art few-shot classification methods.
 
 <p align="center">
-  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/1.jpeg" alt="Model Architecture" width="80%">
+  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/1.jpeg" alt="Model Architecture" width="100%">
   <br/><em>Figure 1: Model Architecture.</em>
 </p>
 
@@ -68,15 +68,15 @@ python experiments/dogs/VRAS-ResNet-12/train.py
 ## 📊 Experimental Results
 
 <p align="center">
-  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table1.jpeg?raw=true" alt="Experimental Results Table 1" width="80%">
+  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table1.jpeg?raw=true" alt="Experimental Results Table 1" width="100%">
   <br/><em>Table 1: Comparison with state-of-the-art methods.</em>
 </p>
 <p align="center">
-  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table2.jpeg?raw=true" alt="Experimental Results Table 2" width="80%">
+  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table2.jpeg?raw=true" alt="Experimental Results Table 2" width="100%">
   <br/><em>Table 2: Ablation Study.</em>
 </p>
 <p align="center">
-  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table3.jpeg?raw=true" alt="Viewpoint-Robust Ablation Study" width="80%">
+  <img src="https://github.com/jiangjiawen321/VRAS/blob/main/Figure/table3.jpeg?raw=true" alt="Viewpoint-Robust Ablation Study" width="70%">
   <br/><em>Table 3: Viewpoint-Robust Ablation Study.</em>
 </p>
 
