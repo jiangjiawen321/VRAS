@@ -2,12 +2,27 @@
 
 <p align="center">
   <a href="https://example.com/path/to/your/paper">
-    <img alt="Paper" src="https://img.shields.io/badge/Paper-IJCNN%202025-blue" />
+    <img
+      alt="IJCNN 2025 Paper"
+      src="https://img.shields.io/badge/IJCNN%202025-Paper-3778C2?style=flat-square&logo=read-the-docs&logoColor=white"
+    />
   </a>
   <a href="https://github.com/jiangjiawen321/VRAS">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/jiangjiawen321/VRAS?style=social" />
+    <img
+      alt="GitHub Stars"
+      src="https://img.shields.io/github/stars/jiangjiawen321/VRAS?style=flat-square&logo=github&logoColor=white"
+    />
+  </a>
+  <a href="https://vimeo.com/1095995421">
+    <img
+      alt="Vimeo Video"
+      src="https://img.shields.io/badge/Video-Vimeo-1AB7EA?style=flat-square&logo=vimeo&logoColor=white"
+    />
   </a>
 </p>
+
+
+
 
 <p align="center"><strong>⭐ If you find our code useful, please consider starring this repository!</strong></p>
 
