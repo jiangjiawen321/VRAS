@@ -123,13 +123,7 @@ python experiments/dogs/VRAS-ResNet-12/train.py
 
 Special thanks to the open-source community, especially [**FRN**](https://github.com/Tsingularity/FRN), whose work inspired part of this project. 💡
 
----
 
-## 📈 Star History
 
-<p align="center">
-  <a href="https://www.star-history.com/#jiangjiawen321/VRAS&Date">
-    <img src="https://api.star-history.com/svg?repos=jiangjiawen321/VRAS&type=Date" alt="Star History Chart"/>
-  </a>
-</p>
+
 
