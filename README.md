@@ -119,6 +119,22 @@ python experiments/dogs/VRAS-ResNet-12/train.py
 
 ---
 
+## 📰Citation
+```code
+@INPROCEEDINGS{11228875,
+  author={Jiang, Jiawen and Li, Jiahang and Lu, Jin},
+  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={View-Robust Backbone and Discriminative Reconstruction for Few-Shot Fine-Grained Image Classification}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Representation learning;Sensitivity;Filters;Semantics;Noise;Neural networks;Robustness;Image reconstruction;Optimization;Image classification;Few-shot learning;Fine-grained image classification;Viewpoint-robust learning;Discriminative feature representation;Ridge regression optimization},
+  doi={10.1109/IJCNN64981.2025.11228875}}
+```
+
+---
+
 ## 🙏 Acknowledgement
 
 Special thanks to the open-source community, especially [**FRN**](https://github.com/Tsingularity/FRN), whose work inspired part of this project. 💡
