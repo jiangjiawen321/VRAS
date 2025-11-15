@@ -119,7 +119,7 @@ python experiments/dogs/VRAS-ResNet-12/train.py
 
 ---
 
-## 📰Citation
+## 📰 Citation
 ```code
 @INPROCEEDINGS{11228875,
   author={Jiang, Jiawen and Li, Jiahang and Lu, Jin},
