@@ -1,10 +1,10 @@
 <h1 align="center">🌄 View-Robust Backbone and Discriminative Reconstruction for Few-Shot Fine-Grained Image Classification</h1>
 
 <p align="center">
-  <a href="https://example.com/path/to/your/paper">
+  <a href="https://ieeexplore.ieee.org/document/11228875">
     <img
-      alt="IJCNN 2025 Paper"
-      src="https://ieeexplore.ieee.org/document/11228875?style=flat-square&logo=read-the-docs&logoColor=white"
+      alt="IJCNN 2025 Paper"
+      src="https://img.shields.io/badge/IJCNN%202025-Paper-blue?style=flat-square&logo=read-the-docs&logoColor=white"
     />
   </a>
   <a href="https://github.com/jiangjiawen321/VRAS">
