@@ -4,7 +4,7 @@
   <a href="https://example.com/path/to/your/paper">
     <img
       alt="IJCNN 2025 Paper"
-      src="https://img.shields.io/badge/IJCNN%202025-Paper-3778C2?style=flat-square&logo=read-the-docs&logoColor=white"
+      src="https://ieeexplore.ieee.org/document/11228875?style=flat-square&logo=read-the-docs&logoColor=white"
     />
   </a>
   <a href="https://github.com/jiangjiawen321/VRAS">
